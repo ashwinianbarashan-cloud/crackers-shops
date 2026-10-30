@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JOY SPARK CRACKERS | Diwali Dhamaka Sale 2026 – Up to 60% Off Certified Crackers</title>
+<meta name="description" content="Shop certified, low-emission Diwali crackers at JOY SPARK CRACKERS. Sparklers, sky shots, chakras and family gift boxes at up to 60% off. 18+ only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">🪔 Diwali Dhamaka Sale: free delivery above ₹999 · Ends 8 Nov 2026 · 18+ only</div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo"><i class="fa-solid fa-burst"></i> JOY SPARK <span>CRACKERS</span></a>
+    <nav id="menu" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#products" data-cat="sparkler">Sparklers</a>
+      <a href="#products" data-cat="rocket">Rockets &amp; Sky Shots</a>
+      <a href="#products" data-cat="chakra">Ground Chakras</a>
+      <a href="#products" data-cat="gift">Gift Boxes</a>
+      <a href="#offers">Offers</a>
+    </nav>
+    <div class="icons">
+      <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button id="cartBtn" aria-label="Open cart"><i class="fa-solid fa-cart-shopping"></i><b id="cartCount">0</b></button>
+      <button id="burger" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div class="searchbar" id="searchBar"><div class="wrap"><input id="searchInput" type="search" placeholder="Search sparklers, rockets, gift boxes…" aria-label="Search products"></div></div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div>
+      <p class="tag">Diwali Dhamaka Sale 2026</p>
+      <h1>Light Up Your Diwali with Joy!</h1>
+      <p class="sub">Safe, Certified Crackers for the Whole Family.</p>
+      <p class="big">UP TO 60% OFF</p>
+      <div class="btns"><a href="#products" class="btn fire">Shop Now</a><a href="#combos" class="btn ghost">Explore Combos</a></div>
+    </div>
+    <div class="hero-img"><img src="https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=900&q=80" alt="Colourful fireworks lighting up the night sky" onerror="this.remove()"><span class="diya">🪔</span></div>
+  </div>
+</section>
+
+<section class="sec" id="offers">
+  <div class="wrap"><h2>Diwali Special Offers</h2>
+    <div class="grid3">
+      <article class="offer o1"><span class="badge">30% OFF</span><h3>Sparklers &amp; Flower Pots</h3><p>Flat 30% off glowing favourites.</p><button class="btn fire" data-filter="sparkler">Shop Sparklers</button></article>
+      <article class="offer o2"><span class="badge">40% OFF</span><h3>Family Gift Boxes</h3><p>Flat 40% off ready-to-burst boxes.</p><button class="btn fire" data-filter="gift">Shop Gift Boxes</button></article>
+      <article class="offer o3"><span class="badge">50% OFF</span><h3>Kids' Safe Crackers</h3><p>Flat 50% off low-noise packs.</p><button class="btn fire" data-filter="kids">Shop Kids' Pack</button></article>
+    </div></div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap"><h2>Featured Categories</h2>
+    <div class="grid4">
+      <a href="#products" class="cat" data-filter="sparkler"><img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?w=500&q=80" alt="Sparklers and fountains" onerror="this.remove()"><span class="em">✨</span><h3>Sparklers &amp; Fountains</h3></a>
+      <a href="#products" class="cat" data-filter="rocket"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&q=80" alt="Rockets and sky shots" onerror="this.remove()"><span class="em">🚀</span><h3>Rockets &amp; Sky Shots</h3></a>
+      <a href="#products" class="cat" data-filter="chakra"><img src="https://images.unsplash.com/photo-1481162854517-d9e353af153d?w=500&q=80" alt="Ground chakras and flower pots" onerror="this.remove()"><span class="em">🎆</span><h3>Ground Chakras &amp; Flower Pots</h3></a>
+      <a href="#products" class="cat" data-filter="gift"><img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=500&q=80" alt="Diwali gift boxes and combo packs" onerror="this.remove()"><span class="em">🎁</span><h3>Gift Boxes &amp; Combo Packs</h3></a>
+    </div></div>
+</section>
+
+<section class="sec" id="products">
+  <div class="wrap"><h2>Trending Products</h2>
+    <div class="filters" role="group" aria-label="Filter products">
+      <button class="chip active" data-filter="all">All</button><button class="chip" data-filter="sparkler">Sparklers</button>
+      <button class="chip" data-filter="rocket">Rockets</button><button class="chip" data-filter="chakra">Chakras</button>
+      <button class="chip" data-filter="gift">Gift Boxes</button><button class="chip" data-filter="kids">Kids</button>
+    </div>
+    <div class="grid4" id="productGrid"></div>
+    <p id="noResults" class="empty" hidden>No products match your search. Try another keyword.</p>
+    <div class="combo" id="combos">
+      <h3>Frequently Bought Together</h3>
+      <div id="comboRow"></div>
+      <button class="btn fire" id="addCombo">Add all 3 to cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="count">
+  <div class="wrap"><h2>Sale Ends Soon: Don't Miss Out!</h2>
+    <div class="timer" id="timer" role="timer">
+      <div><b id="d">00</b><span>Days</span></div><div><b id="h">00</b><span>Hours</span></div>
+      <div><b id="m">00</b><span>Minutes</span></div><div><b id="s">00</b><span>Seconds</span></div>
+    </div>
+    <p id="saleMsg">Dhamaka Sale ends 8 November 2026. Stock is limited.</p></div>
+</section>
+
+<section class="sec" id="safety">
+  <div class="wrap"><h2>Safety First</h2>
+    <div class="safe">
+      <div class="check"><h3>Safety checklist</h3><ul>
+        <li><i class="fa-solid fa-circle-check"></i> Burn crackers outdoors, with an adult supervising.</li>
+        <li><i class="fa-solid fa-circle-check"></i> Keep a bucket of water nearby.</li>
+        <li><i class="fa-solid fa-circle-check"></i> Choose green, low-emission, certified crackers only.</li>
+        <li><i class="fa-solid fa-circle-check"></i> Follow local laws and permitted bursting hours.</li>
+        <li><i class="fa-solid fa-circle-check"></i> Buyers must be 18+. Delivery is restricted where firecrackers are banned.</li></ul></div>
+      <div class="trust">
+        <div><i class="fa-solid fa-certificate"></i><b>Licensed Seller</b></div>
+        <div><i class="fa-solid fa-award"></i><b>Certified Quality</b></div>
+        <div><i class="fa-solid fa-box"></i><b>Safe Packaging</b></div>
+      </div>
+    </div></div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap"><h2>Why Choose Us?</h2>
+    <div class="grid4 why">
+      <div><i class="fa-solid fa-gem"></i><h3>Premium Quality</h3><p>Fresh stock from trusted makers.</p></div>
+      <div><i class="fa-solid fa-indian-rupee-sign"></i><h3>Affordable Prices</h3><p>Factory-direct festive pricing.</p></div>
+      <div><i class="fa-solid fa-box-open"></i><h3>Safe Packaging</h3><p>Moisture-proof, spark-safe boxes.</p></div>
+      <div><i class="fa-solid fa-rotate-left"></i><h3>Easy Returns</h3><p>Replacement for damaged items.</p></div>
+    </div></div>
+</section>
+
+<section class="sec">
+  <div class="wrap"><h2>What Our Customers Say</h2>
+    <div class="grid3">
+      <blockquote class="review"><img src="https://i.pravatar.cc/100?img=15" alt="Ramesh K." onerror="this.remove()"><div class="rs">★★★★★</div><p>Great sparklers and the packing was spotless. Kids loved it.</p><cite>Ramesh K., Salem</cite></blockquote>
+      <blockquote class="review"><img src="https://i.pravatar.cc/100?img=45" alt="Divya R." onerror="this.remove()"><div class="rs">★★★★★</div><p>The family gift box was great value. Delivered before Diwali.</p><cite>Divya R., Erode</cite></blockquote>
+      <blockquote class="review"><img src="https://i.pravatar.cc/100?img=60" alt="Suresh P." onerror="this.remove()"><div class="rs">★★★★☆</div><p>Bought the mega combo for our apartment. Good quality and price.</p><cite>Suresh P., Coimbatore</cite></blockquote>
+    </div></div>
+</section>
+
+<section class="news">
+  <div class="wrap"><h2>Get Exclusive Diwali Offers!</h2>
+    <p>Subscribe to our newsletter and receive special discounts and festival updates.</p>
+    <form id="newsForm" novalidate><label for="email" class="sr">Email address</label>
+      <input id="email" type="email" placeholder="you@example.com" required><button class="btn fire" type="submit">Subscribe</button></form>
+    <p id="newsMsg" role="status"></p></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div><a href="#home" class="logo">JOY SPARK <span>CRACKERS</span></a><p>Licensed fireworks retailer bringing certified, family-safe crackers to your Diwali.</p>
+      <div class="social"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+    <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#products">Shop</a><a href="#offers">Offers</a><a href="#safety">Safety</a></div>
+    <div><h4>Customer Support</h4><a href="#">Track Order</a><a href="#">Returns &amp; Replacement</a><a href="#">Bulk Orders</a><a href="#">FAQs</a></div>
+    <div><h4>Contact</h4><p><i class="fa-solid fa-location-dot"></i> 24 Market Road, Tiruchengode, TN</p><p><i class="fa-solid fa-phone"></i> +91 98765 43210</p><p><i class="fa-solid fa-envelope"></i> care@joysparkcrackers.example</p></div>
+  </div>
+  <div class="copy">© 2026 JOY SPARK CRACKERS · <a href="#">Privacy Policy</a> · <a href="#">Terms &amp; Conditions</a><br>Crackers must be used responsibly, only by adults, and in line with local laws.</div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="dhead"><h3>Your Cart</h3><button id="closeCart" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button></div>
+  <div id="cartItems"></div>
+  <div class="dfoot"><div class="tot"><span>Total</span><b id="cartTotal">₹0</b></div><button class="btn fire" id="checkout">Checkout</button></div>
+</aside>
+
+<div class="age" id="age" role="dialog" aria-modal="true" aria-labelledby="ageT" hidden>
+  <div class="agebox"><h2 id="ageT">Are you 18 or older?</h2>
+    <p>Crackers can only be sold to adults. Please confirm your age to enter.</p>
+    <div class="btns"><button class="btn fire" id="ageYes">Yes, I am 18+</button><button class="btn ghost" id="ageNo">No</button></div>
+    <p id="ageMsg" role="alert"></p></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<button id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
